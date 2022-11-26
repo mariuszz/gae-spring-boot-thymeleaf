@@ -8,6 +8,9 @@ Minimal https://spring.io/projects/spring-boot[Spring Boot] app with https://www
 ==== build executable jar
  $ ./gradlew bootJar
 
+==== run executable jar
+ $ java -jar build/libs/gae-spring-boot-thymeleaf-0.0.1-SNAPSHOT.jar
+
 ==== deploy on GAE in DEMO project
  $ ./gradlew appengineDeploy -DGAE_PROJECT_ID=DEMO
 
