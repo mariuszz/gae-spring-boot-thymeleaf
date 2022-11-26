@@ -1,0 +1,14 @@
+= Spring Boot app with Thymeleaf on Google App Engine
+
+Minimal https://spring.io/projects/spring-boot[Spring Boot] app with https://www.thymeleaf.org[Thymeleaf] templates ready for deployment on https://cloud.google.com/appengine[Google App Engine] standard environment.
+
+==== run locally on 8080 port
+ $ ./gradlew bootRun
+
+==== build executable jar
+ $ ./gradlew bootJar
+
+==== deploy on GAE in DEMO project
+ $ ./gradlew appengineDeploy -DGAE_PROJECT_ID=DEMO
+
+WARNING: The first service in a new application must be the 'default' service. If you run this demo on "fresh" GAE application, please change `gae-spring-boot-thymeleaf` to `default` in `app.yaml` file
